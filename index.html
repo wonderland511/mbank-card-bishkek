@@ -80,7 +80,7 @@
   .check li{margin-bottom:10px}
   .check{padding-left:22px;margin:0}
   .sticker-row{display:flex;justify-content:flex-end;margin:12px 0 -64px;position:relative;z-index:1;pointer-events:none}
-  .sticker{width:104px;height:104px;filter:drop-shadow(0 6px 12px rgba(0,0,0,.18))}
+  .sticker{width:104px;height:104px;object-fit:cover;border-radius:50%;border:4px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.2)}
   footer{padding:48px 0 64px;color:var(--muted);font-size:13px}
   footer ul{padding-left:18px;margin:8px 0 0}
   footer li{margin-bottom:4px}
@@ -108,7 +108,6 @@
 
 <main class="wrap">
   <div class="hero">
-    <span class="eyebrow">Инструкция для руководителя</span>
     <h1>Как открыть карту MBANK в&nbsp;Бишкеке гражданину Беларуси</h1>
     <p class="lead">Счёт и карту открывают в день обращения: утром подаёте заявление, после 15:00 забираете карту.</p>
     <div class="summary">
@@ -186,7 +185,7 @@
   </section>
 
   <div class="sticker-row" aria-hidden="false">
-    <img class="sticker" src="img/sticker.png" alt="Милый хомячок" width="104" height="104" data-sticker>
+    <img class="sticker" src="img/sticker-cat.jpg" alt="Смешной котёнок" title="Фото: Tela Chhe, CC BY 2.0, Wikimedia Commons" width="104" height="104" data-sticker>
   </div>
 
   <section id="office">
@@ -223,15 +222,7 @@
       </ul>
     </div>
   </section>
-
-  <footer>
-    Проверено 26.09.2026. Порядок действий основан на практическом опыте; условия банка могут меняться — актуальное уточняйте в MBANK.
-    <ul>
-      <li>Адрес и часы работы: <a href="https://2gis.kg/bishkek/firm/70000001019360396" target="_blank" rel="noopener">2ГИС</a>, <a href="https://mbank.kg/maps" target="_blank" rel="noopener">mbank.kg/maps</a></li>
-      <li>Переименование «Коммерческий банк КЫРГЫЗСТАН» → MBANK: <a href="https://kaktus.media/doc/517475_bank_kyrgyzstan_polnostu_pereimenovan_v_mbank.html" target="_blank" rel="noopener">Kaktus.media</a>, <a href="https://www.akchabar.kg/news/kommercheskij-bank-kirgizstan-smenil-nazvanie-teper-eto-mbank-cvazvfqwrgiqwwov" target="_blank" rel="noopener">Акчабар</a></li>
-      <li>Регистрация иностранцев: <a href="https://ereg.e-gov.kg" target="_blank" rel="noopener">ereg.e-gov.kg</a></li>
-    </ul>
-  </footer>
+  <div style="height:64px"></div>
 </main>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Фото офиса">
